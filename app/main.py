@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from app.models.schemas import ChatRequest, ChatResponse
 from app.services.service import generate_response
 
-app = FastAPI(title="Local LLM Chatbot")
+app = FastAPI(title="Local Mind AI")
 
 @app.get("/")
 def home():
