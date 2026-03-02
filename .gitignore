@@ -13,3 +13,5 @@ Thumbs.db
 
 # Ollama models
 .ollama/
+
+unnecessary/
