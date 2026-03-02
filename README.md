@@ -86,15 +86,6 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Your `requirements.txt` should contain:
-
-```
-fastapi
-uvicorn
-requests
-```
-
----
 
 ## 🤖 Install Ollama & Model
 
