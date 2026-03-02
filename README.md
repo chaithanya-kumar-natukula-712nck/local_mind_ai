@@ -21,11 +21,14 @@
 
 ## 🛠 Tech Stack
 
-- **Backend:** FastAPI  
-- **Frontend:** HTML, CSS, JavaScript  
-- **LLM Engine:** Ollama  
-- **Model:** tinyllama  
-- **Server:** Uvicorn  
+
+| Layer      | Technology |
+|------------|------------|
+| Backend    | FastAPI |
+| Frontend   | HTML, CSS, JavaScript |
+| LLM Engine | Ollama |
+| Model      | tinyllama |
+| Server     | Uvicorn |
 
 ---
 
@@ -139,8 +142,8 @@ http://127.0.0.1:8000
 1. User sends message from frontend  
 2. FastAPI receives it at `/chat`  
 3. Backend formats prompt and calls the Ollama server  
-4. TinyLlama produces a response  
-5. Response is shown in UI  
+4. Ollama processes it using tinyllama
+5. Response is returned and displayed
 
 ---
 
@@ -159,8 +162,8 @@ This app is designed to run entirely on your machine:
 - Streaming responses  
 - Model selection dropdown  
 - Dark / Light mode  
-- Export chats  
-- Docker deployment
+- Chat export feature
+- Docker containerization
 
 ---
 
@@ -173,4 +176,4 @@ Chaithanya Kumar
 
 ## 📜 License
 
-This project is open-source and free to use.
+This project is released under the MIT License.
