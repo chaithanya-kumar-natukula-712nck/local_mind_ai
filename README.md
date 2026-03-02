@@ -11,8 +11,9 @@
 ## 🎯 Why This Project?
 
 This project demonstrates how to build a fully offline AI chatbot 
-using a locally hosted LLM with FastAPI. 
+using a locally hosted LLM with FastAPI.
 It focuses on privacy, local inference, and clean backend architecture.
+
 ---
 
 ## ✨ Features
@@ -72,8 +73,6 @@ git clone https://github.com/chaithanya-kumar-natukula-712nck/local_mind_ai.git
 cd local_mind_ai
 ```
 
----
-
 ### 2️⃣ Create a Python virtual environment (recommended)
 
 ```bash
@@ -91,8 +90,6 @@ source venv/bin/activate
 ```bash
 venv\Scripts\activate
 ```
-
----
 
 ### 3️⃣ Install Python dependencies
 
