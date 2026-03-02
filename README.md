@@ -8,6 +8,12 @@
 **Local Mind AI** is an offline AI chatbot that runs fully locally using **FastAPI**, **Ollama**, and the **tinyllama** model — no cloud APIs, no external LLM services, and fully private.
 
 ---
+## 🎯 Why This Project?
+
+This project demonstrates how to build a fully offline AI chatbot 
+using a locally hosted LLM with FastAPI. 
+It focuses on privacy, local inference, and clean backend architecture.
+---
 
 ## ✨ Features
 
