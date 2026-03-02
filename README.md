@@ -1,113 +1,84 @@
-🚀 Local Mind AI
+# 🧠 Local Mind AI
 
-Offline AI Chatbot powered by FastAPI + Ollama + TinyLlama
+**Local Mind AI** is an offline AI chatbot powered by **FastAPI**, **Ollama**, and **TinyLlama** — no external APIs, no cloud services, fully private and runs locally on your machine.
 
-Local Mind AI is a lightweight AI chatbot that runs completely on your local machine using Ollama. No external APIs. No cloud dependency. Fully private.
+---
 
-📌 Features
+## 🚀 Features
 
-🧠 Local LLM using TinyLlama
+- 🤖 Conversational chatbot UI  
+- 💻 Backend using FastAPI  
+- 📡 Talks to a local LLM via Ollama  
+- 💾 Stores chat history in localStorage  
+- 🗂 New, rename, delete chats  
+- 🔒 Fully offline
 
-⚡ FastAPI backend
+---
 
-💬 Clean chat UI
+## 🛠 Tech Stack
 
-🗂 Multiple chat sessions
+- **Backend:** FastAPI  
+- **Frontend:** HTML, CSS, JavaScript  
+- **LLM Engine:** Ollama  
+- **Model:** tinyllama  
+- **Server:** Uvicorn
 
-✏ Rename & delete chats
+---
 
-🧾 Local storage persistence
+## 📁 Project Structure
+local_mind_ai/
+│
+├── app/
+│ ├── main.py
+│ ├── models/
+│ │ └── schemas.py
+│ └── services/
+│ └── service.py
+│
+├── static/
+│ ├── script.js
+│ └── style.css
+│
+├── templates/
+│ └── index.html
+│
+├── requirements.txt
+└── README.md
 
-🔒 Fully offline & private
+---
 
-🏗 Tech Stack
+## 💡 Requirements
 
-Backend: FastAPI
+**Backend dependencies** (put in `requirements.txt`)
 
-Frontend: HTML, CSS, JavaScript
+You do NOT need:
+- ollama
+- tinyllama
+- jinja2 (if not using templates)
 
-LLM Engine: Ollama
+---
 
-Model: tinyllama
+## 📦 Setup Guide
 
-Server: Uvicorn
+### 1. Clone the repository
 
-📂 Project Structure local_mind_ai/ │ ├── app/ │ ├── main.py │ ├── models/ │ │ └── schemas.py │ └── services/ │ └── service.py │ ├── static/ │ ├── style.css │ └── script.js │ ├── templates/ │ └── index.html │ ├── requirements.txt └── README.md ⚙️ Installation Guide 1️⃣ Clone the Repository git clone cd local_mind_ai 2️⃣ Create Virtual Environment (Recommended) python -m venv venv
+```bash
+git clone https://github.com/chaithanya-kumar-natukula-712nck/local_mind_ai.git
+cd local_mind_ai
+
+2. Create a Python virtual environment (recommended)
+
+python -m venv venv
 
 Activate it:
 
-Linux / Mac:
+Linux / macOS
 
 source venv/bin/activate
 
-Windows:
+Windows
 
-venv\Scripts\activate 3️⃣ Install Dependencies pip install -r requirements.txt
+venv\Scripts\activate
+3. Install dependencies
+pip install -r requirements.txt
 
-Your requirements.txt should contain:
-
-fastapi uvicorn requests 🤖 Install Ollama
-
-Download Ollama from:
-
-👉 https://ollama.com
-
-After installation, pull the model:
-
-ollama pull tinyllama
-
-Start Ollama server:
-
-ollama serve
-
-Ollama will run at:
-
-http://localhost:11434 ▶️ Run the Application
-
-Inside project folder:
-
-uvicorn app.main:app --reload
-
-Open browser:
-
-http://127.0.0.1:8000 💬 How It Works
-
-User sends message from frontend.
-
-FastAPI receives chat messages.
-
-Backend formats prompt.
-
-Request is sent to Ollama API.
-
-Model generates response.
-
-Response returned to frontend.
-
-🔒 Privacy
-
-Runs fully offline
-
-No cloud APIs
-
-No data leaves your machine
-
-🛠 Future Improvements
-
-Streaming responses
-
-Chat export feature
-
-Dark/light theme toggle
-
-Model selector
-
-Docker deployment
-
-📜 License
-
-This project is for learning and educational purposes.
-
-⭐ Author
-
-Built with ❤️ using FastAPI & Ollama.
