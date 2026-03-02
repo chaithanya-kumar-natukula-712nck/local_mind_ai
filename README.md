@@ -26,6 +26,7 @@
 ---
 
 ## 📁 Project Structure
+```
 local_mind_ai/
 │
 ├── app/
@@ -44,7 +45,7 @@ local_mind_ai/
 │
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 💡 Requirements
@@ -65,20 +66,20 @@ You do NOT need:
 ```bash
 git clone https://github.com/chaithanya-kumar-natukula-712nck/local_mind_ai.git
 cd local_mind_ai
-
+```
 2. Create a Python virtual environment (recommended)
 
-python -m venv venv
+```python -m venv venv ```
 
 Activate it:
 
 Linux / macOS
 
-source venv/bin/activate
+```  source venv/bin/activate ```
 
 Windows
 
-venv\Scripts\activate
+```venv\Scripts\activate```
 3. Install dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
