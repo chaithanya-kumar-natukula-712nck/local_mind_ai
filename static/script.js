@@ -173,6 +173,15 @@ async function sendMessage() {
     }
 }
 
+const textarea = document.getElementById("user-input");
+
+textarea.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();   // Stop new line
+        sendMessage();        // Call your existing function
+    }
+});
+
 function renameChat(id) {
     const newName = prompt("Enter new chat name:");
 
