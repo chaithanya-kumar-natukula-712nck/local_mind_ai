@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-orange)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 # 🧠 Local Mind AI
 
 **Local Mind AI** is an offline AI chatbot that runs fully locally using **FastAPI**, **Ollama**, and the **tinyllama** model — no cloud APIs, no external LLM services, and fully private.
